@@ -80,7 +80,7 @@ class Soldier
     {
         if(this.dateOfLiberation == date)
         {
-            return true;
+            return true;  //לא מבין מהשאלה מתי הוא משתחרר או מה?
         }
         return false;
     }
