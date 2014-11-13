@@ -61,6 +61,7 @@ class MyDate    <3
         return "The current date is: " + this.day + "/" + this.month + "/" + this.year + " <3"
     }
 
+
     public string nextDate()
     {
         if(this.day >= 30)
@@ -72,4 +73,26 @@ class MyDate    <3
             return "The next date is: " + this.day+1 + "/" + this.month + "/" + this.year + " <3"
         }
     }
+
+    public string prevDate()
+    {
+        if(this.day <= 1)
+        {
+            return "The previus date is: " + "30" + "/" + this.month-1 + "/" + this.year + " <3"
+        }
+        else
+        {
+            return "The previus date is: " + this.day-1 + "/" + this.month + "/" + this.year + " <3"
+        }
+    }
+
+
+    public string deferenceBetween(int day , int month, int year)
+    {
+        int dateDef = 0;
+
+        dateDef += System.Math.Abs((this.year - year) * 365);
+
+    }
+
 }
