@@ -21,7 +21,7 @@ namespace MyDate
 
             PrintSadir(soldiers);
 
-            
+
         }
 
         public static void PrintSadir(Soldier[] soldiers)
@@ -32,6 +32,18 @@ namespace MyDate
                 MyDate enlis = soldiers[i].GetDateOfEnlistment();
                 Console.WriteLine(liber.DeferenceBetween(enlis));
                 //Console.WriteLine(soldiers[i].GetDateOfLiberation().DeferenceBetween(soldiers[i].GetDateOfEnlistment()));
+            }
+        }
+
+        public static soliders[] LiberateSoldier(MyDate thisDate)
+        {
+            for(i=0 , i<soldiers.Length , i++)
+            {
+                if(soldiers[i].GetDateOfLiberation.DeferenceBetween(thisDate) <= 0 )
+                {
+                    soldiers[i] = null;
+
+                }
             }
         }
     }
