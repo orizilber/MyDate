@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -39,12 +39,16 @@ namespace MyDate
         {
             for(i=0 , i<soldiers.Length , i++)
             {
-                if(soldiers[i].GetDateOfLiberation.DeferenceBetween(thisDate) <= 0 )
+                if(soldiers[i].GetDateOfLiberation.DeferenceBetween(thisDate) <= 0 || soldiers[i] = null)
                 {
                     soldiers[i] = null;
-
+                    soliders[i] = soliders[i+1];;
+                    soliders[i+1] = null;
+                    //יש פה בעיה !!!
                 }
             }
         }
+
+        public static Soldier printInfo(soldiers[] soldiers)
     }
 }
